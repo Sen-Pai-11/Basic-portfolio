@@ -1,0 +1,652 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,
+body {
+  /* height: 100%;  */
+  width: 100%;
+  overflow-x:hidden ;
+}
+
+.main{
+    width: 100%;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+background-color: white;
+    height: 87px;
+    width: 100%;
+    padding: 15px 30px;
+     position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.img1{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding-left: 30px;
+       /* gap: 20px; */
+       width: 30%;
+}
+
+.img1 #hero1{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    position: inherit;
+ 
+}
+
+ nav .info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin-left: 670px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+}
+
+.info h3:hover{
+    color: #7843E9;
+}
+
+.img1 h3:hover{
+    color: #7843E9;
+}
+
+section{
+    /* background-color: orangered; */
+    width: 100%;
+    height: 614px;
+}
+
+
+.mainbody{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top:  170px;
+    gap: 40px;
+    background-image: url(https://media.istockphoto.com/id/1575478330/photo/white-clear-blank-subtle-abstract-geometrical-background-in-ultra-high-definition-quality.webp?a=1&b=1&s=612x612&w=0&k=20&c=qE7GTHAD_7Rxx1Mo4g_nYhAPQCNtdyWgVRGgMA1BSOY=);
+    background-size:cover;
+background-position: center;
+}
+.mainbody h1{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 60px;
+font-weight: 700;
+letter-spacing: 1px;
+}
+
+.mainbody h4{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 17px;
+font-weight: 400;
+letter-spacing: 1px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 65px;
+}
+
+.buton{
+    background-color: #7843E9;
+    color: white;
+    padding: 20px;
+    height: 70px;
+    width: 280px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+}
+
+.buton:hover {
+  transform: translateY(-3px);  /* Lifts the button up */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+  cursor: pointer;
+}
+
+.social {
+  position:absolute;      
+  top: 50%;                /* Middle of the screen vertically */
+  left: 0;                 /* Extreme left */
+  transform: translateY(-50%);  /* Perfect vertical centering */
+  display: flex;
+  flex-direction: column;  /* Arrange icons vertically */
+  gap: 15px;               /* Space between icons */
+  font-size: 35px;
+  padding-left: 10px;      /* Some spacing from the edge */
+  background-color: white;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.social i {
+  transition: transform 0.3s ease;
+}
+
+.social i:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+  background-color: #E4D9FB;
+  border-radius: 5px;
+}
+
+.aboutme{
+    width: 100%;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    height: 40%;
+}
+
+
+.chat{
+    position: absolute;
+    right: 7.5%;
+    bottom: 10%;
+    padding: 10px;
+    width: 160px;
+    font-size: 18px;
+    font-weight: 00;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Minimal shadow */
+  transition: box-shadow 0.2s ease;
+  position: fixed;
+
+
+}
+
+.chat:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35); /* Slightly more on hover */
+  cursor: pointer;
+}
+
+.msgbox{
+    position: absolute;
+    right: 3%;
+    bottom: 10%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #7843E9 ;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Minimal shadow */
+  transition: box-shadow 0.2s ease;
+  position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+
+}
+
+.msgbox:hover {
+  transform: scale(1.05); /* Slightly grows the button */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+  cursor: pointer;
+}
+
+.aboutme{
+    height: 400px;
+width: 100%;
+background-color: #FAFAFA;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.aboutme h2{
+padding-top: 140px;
+letter-spacing: 2px;
+font-size: 37px;
+font-weight: 700;
+}
+
+
+.litline{
+    width: 40px;
+    height: 5px;
+    background-color: #7843E9;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutme h4{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+
+.knowme{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background-color: #FAFAFA;
+  padding: 0 10px;
+}
+
+.mee{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 150px;
+  padding-right: 50px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.mee h2{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding-right: 320px;
+padding-bottom: 20px;
+}
+
+.mee .cont{
+align-self: flex-start; /* aligns to left if using flex */
+  margin-left: 0;         /* ensures it's stuck to the left */
+  padding: 20px 40px;
+  margin-top: 40px;
+  width: 170px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #7843E9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.mee .cont:hover{
+  cursor: pointer;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); 
+}
+
+.connects{
+  color:#7843E9 ;
+}
+
+.techstack h2{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding-right: 330px;
+padding-bottom: 20px;
+}
+
+.techstack{
+  width: 50%;
+  left: 55%;
+  position: absolute;
+  margin-bottom: 120px;
+}
+
+.griditems{
+  letter-spacing: 1px;
+  font-size: 15px;
+  gap:17px ;
+}
+
+.html{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 80px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+
+.css{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 65px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+.js{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 113px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+.react{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 80px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+.sass{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 70px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+.hub{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 87px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+.git{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 60px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+.mongo{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 120px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+.express{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 90px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+.wp{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 120px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+.seo{
+  background-color: #E7E7E7;
+  height: 50px;
+  width: 65px;
+  padding: 14px 17px;
+  border-radius: 6px;
+}
+
+.griditems{
+      display: flex;
+    flex-wrap: wrap;
+width: 50%;
+}
+
+
+
+.proj{
+    height: 400px;
+width: 100%;
+background-color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.proj h2{
+padding-top: 140px;
+letter-spacing: 2px;
+font-size: 37px;
+font-weight: 700;
+}
+
+
+.litline2{
+    width: 40px;
+    height: 5px;
+    background-color: #7843E9;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.proj h4{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+
+.aboutme3{
+    height: 400px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.aboutme3 h2{
+padding-top: 140px;
+letter-spacing: 2px;
+font-size: 37px;
+font-weight: 700;
+}
+
+
+.litline3{
+    width: 40px;
+    height: 5px;
+    background-color: #7843E9;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutme3 h4{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.contactform{
+  background-image: url(https://media.istockphoto.com/id/1142008977/photo/abstract-blurred-soft-white-silver-beautiful-of-electronic-lamp-light-interior-room.webp?a=1&b=1&s=612x612&w=0&k=20&c=WU3Mf6eCHoWsXEMGdc1Q_eDLkJb3KGaKS2_FmexScyA=);
+background-position: center;
+background-size: cover;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.form{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column;
+  width: 500px;
+    background-color: white;
+
+
+
+/* height: 750px; */
+  width:55%;
+  margin-bottom: 100px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow on all sides */
+  border-radius: 10px;
+
+}
+
+
+.formname{
+  width: 100%;
+  height: 50px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F0F0F0;
+}
+
+.form h4{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 700px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  font-weight: 15px;
+  font-weight: 500;
+}
+
+.formmail{
+  width: 100%;
+  height: 50px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F0F0F0;
+}
+
+.formmsg{
+  width: 100%;
+  height: 200px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F0F0F0;
+}
+
+.form .submit{
+  width: 100%;
+  padding: 15px;
+  background: #7843E9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 25px;
+}
+
+.form .submit:hover{
+   transform: translateY(-3px);  /* Lifts the button up */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+  cursor: pointer;
+}
+
+
+
+footer{
+  background-color: black;
+  height: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 150px;
+}
+
+.left .right{
+  margin-bottom: 80px;
+}
+
+.left h5{
+  font-weight: 300;
+  font-size: 15px;
+  /* margin-bottom: 20px; */
+}
+
+.left h2{
+  margin-bottom: 17px;
+  font-size: 20px;
+}
+
+
+
+.right{
+  font-size: 15px;
+}
+
+.right h2{
+  margin-bottom: 17px;
+padding-left: 15px;
+}
+
+.social2 i{
+  font-size: 30px;
+  padding: 0px 10px;
+}
+
+
+.foot{
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  padding-bottom: 70px ;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.line{
+  width: 90%;
+  border: 1px solid grey;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: black;
+}
+.foot2{
+padding-top: 30px;
+font-size: 13px;
+font-weight: 300;
+}
+
+.foot2 a{
+  color: white;
+}
